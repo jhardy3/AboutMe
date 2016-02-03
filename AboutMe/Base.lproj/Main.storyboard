@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Lg-oJ-hAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="503"/>
+            <point key="canvasLocation" x="699" y="504"/>
         </scene>
         <!--Introduction-->
         <scene sceneID="Gqh-i2-fZO">
@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-2M-Aft">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="240" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-2M-Aft">
                                 <rect key="frame" x="460" y="20" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WaH-2M-Aft" secondAttribute="height" multiplier="1:1" id="Lzw-V5-v8a"/>
@@ -49,27 +49,72 @@
                                     <constraint firstAttribute="width" secondItem="TWM-Um-rid" secondAttribute="height" multiplier="1:1" id="Y8p-QJ-Yok"/>
                                 </constraints>
                                 <string key="text">Hi, my name is Jake! I'm a brand new iOS Developer. I am interested in quite a few different things, so programming is a great fit.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="11"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.65490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="227" placeholderIntrinsicHeight="21" text="Check out some of my interests below!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYT-Gd-jpJ">
                                 <rect key="frame" x="20" y="148" width="227" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.65490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-FW-J1S">
+                                <rect key="frame" x="20" y="300" width="560" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Uzf-EX-93o">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-nF-rhv">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="55"/>
+                                                <state key="normal" title="Photography"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoO-Cr-8P3">
+                                                <rect key="frame" x="0.0" y="55" width="280" height="55"/>
+                                                <state key="normal" title="Exploration"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Uu-as-YoR">
+                                                <rect key="frame" x="0.0" y="110" width="280" height="55"/>
+                                                <state key="normal" title="Travel"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBS-BX-BPR">
+                                                <rect key="frame" x="0.0" y="165" width="280" height="55"/>
+                                                <state key="normal" title="The Desert"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iq8-O0-NY1">
+                                        <rect key="frame" x="280" y="0.0" width="280" height="220"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2RY-l6-DDO">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="0.0"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lilGuy" translatesAutoresizingMaskIntoConstraints="NO" id="Psy-Qq-gQa">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Psy-Qq-gQa" secondAttribute="height" multiplier="14:11" id="SZ3-l7-IJ9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.76862745098039209" green="0.9137254901960784" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.93620654453028995" green="0.95627049641205497" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.29803921568627451" green="0.65490196078431373" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="AYT-Gd-jpJ" secondAttribute="leading" id="3kz-67-ye5"/>
                             <constraint firstAttribute="leadingMargin" secondItem="TWM-Um-rid" secondAttribute="leading" id="5fa-Ol-SNp"/>
                             <constraint firstItem="AYT-Gd-jpJ" firstAttribute="top" secondItem="fHs-hJ-lZ3" secondAttribute="bottom" constant="128" id="LmS-wp-fdh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WaH-2M-Aft" secondAttribute="trailing" id="TTl-Tp-oge"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4hN-FW-J1S" secondAttribute="trailing" id="XtL-We-y34"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4hN-FW-J1S" secondAttribute="leading" id="Xur-Eu-quA"/>
+                            <constraint firstItem="4hN-FW-J1S" firstAttribute="top" secondItem="fHs-hJ-lZ3" secondAttribute="bottom" constant="280" id="d5h-dD-qHU"/>
                             <constraint firstItem="AYT-Gd-jpJ" firstAttribute="top" secondItem="TWM-Um-rid" secondAttribute="bottom" constant="8" id="dyj-4i-0Sz"/>
                             <constraint firstItem="TWM-Um-rid" firstAttribute="top" secondItem="fHs-hJ-lZ3" secondAttribute="bottom" constant="-10" id="eb5-Om-Fa1"/>
                             <constraint firstItem="WaH-2M-Aft" firstAttribute="width" secondItem="xg5-0G-K5z" secondAttribute="height" multiplier="1:5" id="ksT-bX-Fd5"/>
                             <constraint firstItem="T1J-CR-wLV" firstAttribute="top" secondItem="TWM-Um-rid" secondAttribute="bottom" constant="411" id="lFf-TN-cb1"/>
+                            <constraint firstItem="T1J-CR-wLV" firstAttribute="top" secondItem="4hN-FW-J1S" secondAttribute="bottom" constant="31" id="qSj-KW-CWR"/>
                             <constraint firstItem="WaH-2M-Aft" firstAttribute="top" secondItem="fHs-hJ-lZ3" secondAttribute="bottom" id="s1c-dp-0sD"/>
                         </constraints>
                     </view>
@@ -102,6 +147,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1022" height="1021"/>
+        <image name="Profile" width="1022" height="1021"/>
+        <image name="lilGuy" width="600" height="600"/>
     </resources>
 </document>
